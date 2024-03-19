@@ -36,7 +36,7 @@ public class BrokenLinksTest {
 		driver.quit();
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void getBrokenLinks() throws IOException {
 		List<WebElement> linkElList = driver.findElements(By.tagName("a"));
 		for (WebElement linkEl : linkElList) {
